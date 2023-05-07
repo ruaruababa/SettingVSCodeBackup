@@ -1,0 +1,253 @@
+{
+    "git.autofetch": true,
+    "editor.wordWrapColumn": 80,
+    "files.autoSaveDelay": 5000,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue",
+        "markdown"
+    ],
+    "selectby.regexes": {
+        "goToEmpty": {
+            // "moveby": "<(.*?)>(?=</\\s?\\1)|\"(?=\")",
+            "moveby": "<([^\\s]+).*?>(?=</\\s?\\1)|\"(?=\")"
+        }
+    },
+    "headwind.classRegex": {
+        "html": "\\bclass\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\']",
+        "css": "\\B@apply\\s+([_a-zA-Z0-9\\s\\-\\:\\/]+);",
+        "javascript": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)",
+        "javascriptreact": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)",
+        "typescript": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)",
+        "typescriptreact": "(?:\\bclassName\\s*=\\s*[\\\"\\']([_a-zA-Z0-9\\s\\-\\:\\/]+)[\\\"\\'])|(?:\\btw\\s*`([_a-zA-Z0-9\\s\\-\\:\\/]*)`)"
+    },
+    "headwind.runOnSave": true,
+    "headwind.removeDuplicates": true,
+    "window.restoreWindows": "all",
+    "[javascript, javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.formatDocument": true,
+        "source.fixAll.eslint": true,
+        "source.organizeImports": true,
+        "source.fixAll": true,
+        "source.sortMembers": true
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "[html]": {
+        "editor.suggest.insertMode": "replace",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "editor.formatOnPaste": false,
+    "prettier.trailingComma": "all",
+    "prettier.bracketSpacing": false,
+    "prettier.tabWidth": 4,
+    "prettier.semi": true,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 80,
+    "prettier.endOfLine": "auto",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active",
+    "code-runner.executorMap": {
+        "javascript": "nodemon",
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+        "php": "php",
+        "python": "python -u",
+        "groovy": "groovy",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+        "typescript": "ts-node",
+        "sass": "sass --style expanded",
+        "scss": "scss --style expanded",
+        "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
+    },
+    "code-runner.runInTerminal": true,
+    "editor.fontFamily": "Fira Code Retina",
+    "editor.fontWeight": "300", // Light
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.trimFinalNewlines": true,
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "Fira Code Retina",
+    "auto-close-tag.activationOnLanguage": [
+        "xml",
+        "php",
+        "blade",
+        "ejs",
+        "jinja",
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "plaintext",
+        "markdown",
+        "vue",
+        "liquid",
+        "erb",
+        "lang-cfml",
+        "cfml",
+        "HTML (EEx)",
+        "HTML (Eex)",
+        "plist"
+    ],
+
+    "settingsSync.ignoredExtensions": ["zignd.html-css-class-completion"],
+    "[javascript]": {
+        // "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editor.showTabs": true,
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.editor.enablePreview": false,
+    "editor.inlineSuggest.enabled": true,
+    "explorer.confirmDelete": false,
+    "editor.stickyScroll.enabled": true,
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.folders.color": "#90a4ae",
+    "material-icon-theme.opacity": 1,
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": true,
+        "plaintext": true,
+        "markdown": true,
+        "react": true,
+        "typescript": true,
+        "javascript": true,
+        "python": true,
+        "html": true,
+        "css": true
+    },
+    "workbench.startupEditor": "none",
+    "terminal.integrated.cursorStyle": "line",
+    "html-css-class-completion.CSSLanguages": ["css", "sass", "scss"],
+    "editor.cursorWidth": 1,
+    "terminal.integrated.cursorBlinking": true,
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "debug.inlineValues": "on",
+    "typescript.inlayHints.parameterTypes.enabled": true,
+    "javascript.inlayHints.parameterTypes.enabled": true,
+    "js/ts.implicitProjectConfig.checkJs": true,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "workbench.sideBar.location": "right",
+    "vscodeGoogleTranslate.preferredLanguage": "Vietnamese",
+    "git.suggestSmartCommit": false,
+    "tabnine.experimentalAutoImports": true,
+    "git.ignoreRebaseWarning": true,
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "turboConsoleLog.quote": "`",
+    "turboConsoleLog.delimiterInsideMessage": "",
+    "turboConsoleLog.includeFileNameAndLineNum": false,
+    "console-ninja.outputMode": "In View",
+    "console-ninja.dateTimeFormat": "hh:mm",
+
+    "better-comments.multilineComments": true,
+    "better-comments.highlightPlainText": false,
+    "better-comments.tags": [
+        {
+            "tag": "!",
+            "color": "#FF2D00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "?",
+            "color": "#3498DB",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "//",
+            "color": "#474747",
+            "strikethrough": true,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "todo",
+            "color": "#FF8C00",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        },
+        {
+            "tag": "*",
+            "color": "#98C379",
+            "strikethrough": false,
+            "underline": false,
+            "backgroundColor": "transparent",
+            "bold": false,
+            "italic": false
+        }
+    ],
+
+    "diffEditor.ignoreTrimWhitespace": false,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        },
+        "Ubuntu (WSL)": {
+            "path": "C:\\Windows\\System32\\wsl.exe",
+            "args": ["-d", "Ubuntu"]
+        }
+    },
+    "githubPullRequests.pullBranch": "never",
+    "eslint.execArgv": null,
+    "workbench.colorTheme": "One Dark Pro Mix",
+    "terminal.integrated.env.windows": {
+        "path": "C:\\Users\\admin\\.console-ninja\\.bin;C:\\Users\\yang\\.console-ninja\\.bin;${env:PATH}"
+    },
+    "editor.largeFileOptimizations": false,
+    "window.commandCenter": true,
+    "errorLens.excludeBySource": ["ts(17014)"],
+    "files.autoSave": "afterDelay",
+    "AREPL.defaultFilterTypes": [
+        "<class 'typing._SpecialForm'>",
+        "<class 'typing._SpecialGenericAlias'>",
+        "<class 'module'>",
+        "<class 'function'>",
+        "<class 'builtin_function_or_method'>"
+    ]
+}
